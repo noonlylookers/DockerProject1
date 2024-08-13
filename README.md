@@ -1,22 +1,21 @@
 # Ubuntu docker container.
-## Description:
+## Описание:
 
-Just a linux for some tests, working, and what you  need to do in linux.
+## Просто linux для некоторых тестов, работа и то, что вам нужно сделать в linux.
 
-## Note!
-Set your git the following command.
+## Примечание!
+## Установите для вашего git следующую команду.
 
     git config --global core.autocrlf false
 
 Because trailing characters ^M will affect the docker image build.
 
-## How to use:
-### Build docker image.
-    docker build -t your_image_tag .
-### Run container with 22 port forwarding.
-    docker run -id --name container_name -p 22:22 your_image_tag
-### Connect to your container:
-    docker exec -it  container_name /bin/bash
-### Or use ssh 
-    login:root password:root
-Enjoy...
+## Как использовать:
+## Сборка образа docker.
+docker build -t your_image_tag .
+## Запуск контейнера с переадресацией 22 портов.
+docker run -id --name container_name -p 22:22 your_image_tag
+## Подключитесь к своему контейнеру:
+docker exec -it container_name /bin/bash
+## Или используйте ssh
+login:root password:root
